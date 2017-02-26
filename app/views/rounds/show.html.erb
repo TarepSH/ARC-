@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Round map:</strong>
+  <%= @round.round_map %>
+</p>
+
+<p>
+  <strong>Round room:</strong>
+  <%= @round.round_room %>
+</p>
+
+<%= link_to 'Edit', edit_round_path(@round) %> |
+<%= link_to 'Back', rounds_path %>

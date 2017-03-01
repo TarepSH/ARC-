@@ -24,11 +24,14 @@ class GamesController < ApplicationController
   # POST /games
   # POST /games.json
   def create
-    @game = Game.new(game_params)
+   @team = Team.find(params[:team_id])
+    @game = @team.games.create(game_params)
+    @game.team_id = @game.id
 
+     
     respond_to do |format|
       if @game.save
-        format.html { redirect_to @game, notice: 'Game was successfully created.' }
+        format.html { redirect_to team_path(@team), notice: 'Game was successfully created.' }
         format.json { render :show, status: :created, location: @game }
       else
         format.html { render :new }
@@ -65,6 +68,7 @@ class GamesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_game
       @game = Game.find(params[:id])
+            @team = Team.find(params[:team_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

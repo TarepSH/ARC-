@@ -20,5 +20,20 @@
   <%= @team.team_point %>
 </p>
 
+
+
+<h2>Add a game:</h2>
+<%= form_for([@team, @team.games.build]) do |f| %>
+  <p>
+    <%= f.label :game_point %><br>
+    <%= f.number_field :game_point %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 
+
 <%= link_to 'Edit', edit_team_path(@team) %> |
 <%= link_to 'Back', teams_path %>

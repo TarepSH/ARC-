@@ -1,0 +1,17 @@
+[33mcommit cd9526b8bacb955ebcaf6852f743f7ac966a1580[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Sun Feb 26 19:27:39 2017 +0000
+
+    add team, round, game table for db
+
+[33mcommit ba072b049eaef4e49f6be338a6e7e964a36845fa[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Sun Feb 26 14:53:17 2017 +0200
+
+    adding home contotler withe index peage as home peag
+
+[33mcommit 3d83777b0ef9ecf3e54138d8ccc8508bebb73ec3[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Thu Feb 23 12:23:46 2017 +0200
+
+    starting new preject

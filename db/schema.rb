@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170227190108) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "games", force: :cascade do |t|
     t.integer  "team_id"
     t.integer  "round_id"
@@ -21,7 +24,7 @@ ActiveRecord::Schema.define(version: 20170227190108) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "team_id_id"
-    t.index ["team_id_id"], name: "index_games_on_team_id_id"
+    t.index ["team_id_id"], name: "index_games_on_team_id_id", using: :btree
   end
 
   create_table "rounds", force: :cascade do |t|

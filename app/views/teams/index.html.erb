@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Team Group</th>
       <th>Team name</th>
       <th>Team school</th>
       <th>Team category</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @teams.each do |team| %>
       <tr>
+        <td><%= team.TeamGroups %></td>
         <td><%= team.team_name %></td>
         <td><%= team.team_school %></td>
         <td><%= team.team_category %></td>

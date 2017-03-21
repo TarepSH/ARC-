@@ -24,6 +24,11 @@
   <div class="field">
 <%= f.select :team_category, options_for_select(["Line Race", "Sumo", "Open", "Football"]), {}, {:multiple => false, :class => "chzn-select", :style => "width:450px;" } %>
   </div>
+  
+  <div class="field">
+    <%= f.label :TeamGroups %>
+    <%= f.number_field :TeamGroups %>
+  </div>
 
   <div class="actions">
     <%= f.submit %>

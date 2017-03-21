@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170227190108) do
+ActiveRecord::Schema.define(version: 20170321122342) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,11 +27,12 @@ ActiveRecord::Schema.define(version: 20170227190108) do
     t.index ["team_id_id"], name: "index_games_on_team_id_id", using: :btree
   end
 
-  create_table "rounds", force: :cascade do |t|
-    t.integer  "round_map"
-    t.integer  "round_room"
+  create_table "groups", force: :cascade do |t|
+    t.string   "game"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "team_id"
+    t.index ["team_id"], name: "index_groups_on_team_id", using: :btree
   end
 
   create_table "teams", force: :cascade do |t|
@@ -41,6 +42,9 @@ ActiveRecord::Schema.define(version: 20170227190108) do
     t.integer  "team_point"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.integer  "TeamGroups"
+    t.index ["TeamGroups"], name: "index_teams_on_TeamGroups", using: :btree
   end
 
+  add_foreign_key "groups", "teams"
 end

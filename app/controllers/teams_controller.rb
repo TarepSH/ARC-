@@ -11,6 +11,11 @@ class TeamsController < ApplicationController
   sum_total_point= total_point.sum(:game_point)
   add_game_point = Team.where(id: (id_number))
   add_game_point.update(team_point: sum_total_point)
+  
+  game_size = total_point.size
+  add_game_size = Team.where(id: (id_number))
+  add_game_size.update(games_play: game_size)
+
 end
   end
 

@@ -5,11 +5,19 @@ class TeamsController < ApplicationController
   # GET /teams.json
   def index
     @teams = Team.all
+    Team.all.each do |id_number| 
+
+    total_point = Game.where(team_id: (id_number))
+  sum_total_point= total_point.sum(:game_point)
+  add_game_point = Team.where(id: (id_number))
+  add_game_point.update(team_point: sum_total_point)
+end
   end
 
   # GET /teams/1
   # GET /teams/1.json
   def show
+
   end
 
   # GET /teams/new

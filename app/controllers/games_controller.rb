@@ -15,6 +15,7 @@ class GamesController < ApplicationController
   # GET /games/new
   def new
     @game = Game.new
+   
   end
 
   # GET /games/1/edit
@@ -27,7 +28,6 @@ class GamesController < ApplicationController
    @team = Team.find(params[:team_id])
     @game = @team.games.create(game_params)
     @game.team_id = @game.id
-
      
     respond_to do |format|
       if @game.save

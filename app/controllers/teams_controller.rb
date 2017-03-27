@@ -5,9 +5,9 @@ class TeamsController < ApplicationController
   # GET /teams.json
   def index
     @teams = Team.all
-    Team.all.each do |id_number| 
-
-    total_point = Game.where(team_id: (id_number))
+  
+  Team.all.each do |id_number| 
+  total_point = Game.where(team_id: (id_number))
   sum_total_point= total_point.sum(:game_point)
   
   add_game_point = Team.where(id: (id_number))
@@ -17,6 +17,9 @@ class TeamsController < ApplicationController
   add_game_size = Team.where(id: (id_number))
   add_game_size.update(games_play: game_size)
 
+  best_time_from_games = total_point.minimum(:game_time)
+  add_best_time = Team.where(id: (id_number))
+  add_best_time.update(best_time: best_time_from_games)
 end
   end
 

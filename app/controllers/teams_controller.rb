@@ -83,6 +83,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def team_params
-      params.require(:team).permit(:team_name, :team_school, :team_category, :team_point, :TeamGroups)
+      params.require(:team).permit(:team_name, :team_school, :team_category, :team_point, :team_group)
     end
 end

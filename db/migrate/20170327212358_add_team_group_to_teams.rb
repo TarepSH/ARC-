@@ -1,0 +1,5 @@
+class AddTeamGroupToTeams < ActiveRecord::Migration[5.0]
+  def change
+    add_column :teams, :team_group, :integer
+  end
+end

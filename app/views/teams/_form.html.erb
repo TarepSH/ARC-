@@ -1,4 +1,4 @@
-<%= form_for(team) do |f| %>
+<%= bootstrap_form_for(team, layout: :inline) do |f| %>
   <% if team.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(team.errors.count, "error") %> prohibited this team from being saved:</h2>
@@ -12,22 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :team_name %>
-    <%= f.text_field :team_name %>
+    <%= f.text_field :team_name, :required => true%>
   </div>
 
   <div class="field">
-    <%= f.label :team_school %>
-    <%= f.text_field :team_school %>
+    <%= f.text_field :team_school, :required => true %>
   </div>
 
   <div class="field">
-<%= f.select :team_category, options_for_select(["Line Race", "Sumo", "Open", "Football"]), {}, {:multiple => false, :class => "chzn-select", :style => "width:450px;" } %>
+<%= f.select :team_category, options_for_select(["Line Race", "Sumo", "Open", "Football"]), {}, {:multiple => false,  :required => true } %>
   </div>
   
   <div class="field">
-    <%= f.label :team_group %>
-    <%= f.number_field :team_group %>
+    <%= f.number_field :team_group, :required => true %>
   </div>
 
   <div class="actions">

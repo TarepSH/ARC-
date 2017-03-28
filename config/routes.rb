@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-	root 'teams#index'
 
+root 'teams#index'
   get 'home/index'
   get 'home/about_us'
   

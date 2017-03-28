@@ -40,6 +40,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem "therubyracer"
 gem "twitter-bootstrap-rails"
+gem 'bootstrap_form'
+
+
 gem 'devise'
 
 group :development, :test do

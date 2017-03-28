@@ -15,26 +15,18 @@
   <%= @team.team_category %>
 </p>
 
-<p>
-  <strong>Team point:</strong>
-  <%= @team.team_point %>
-</p>
-
-
 
 <h2>Add a game:</h2>
-<%= form_for([@team, @team.games.build]) do |f| %>
+<%= bootstrap_form_for([@team, @team.games.build], layout: :inline) do |f| %>
   <p>
-    <%= f.label :game_point %><br>
-    <%= f.number_field :game_point %>
+    <%= f.number_field :game_point, :required => true, help: "0=for lose, 1=for draw, 2=for win"%>
   </p>
   
    <p>
-    <%= f.label :game_time %><br>
-    <%= f.number_field :game_time, :step => 0.01%>
+    <%= f.number_field :game_time, :step => 0.01, :required => true, help: "ex: 1.15 for 1 minute and 15 seconds or 0.20 =for 20 seconds"%>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-success" %>
   </p>
 <% end %>
  

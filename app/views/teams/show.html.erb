@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<div class="panel panel-primary">
+  <div class="panel-heading">Team category:  <%= @team.team_category %> </div>
+
+  <div class="panel-body">
+
 <p>
   <strong>Team name:</strong>
   <%= @team.team_name %>
@@ -10,12 +15,9 @@
   <%= @team.team_school %>
 </p>
 
-<p>
-  <strong>Team category:</strong>
-  <%= @team.team_category %>
-</p>
+</div>
 
-
+</div>
 <h2>Add a game:</h2>
 <%= bootstrap_form_for([@team, @team.games.build], layout: :inline) do |f| %>
   <p>

@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-
-  resources :rounds
+  devise_for :users
+	root 'teams#index'
 
   get 'home/index'
+  get 'home/about_us'
+  
+  resources :rounds
 
 resources :teams do
   resources :games

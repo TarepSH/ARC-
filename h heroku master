@@ -1,0 +1,131 @@
+[33mcommit 09e3a0436ee630d4b92ccc37647dacd4213cc372[m
+Author: Tarek <tarepsh@gmail.com>
+Date:   Wed Mar 29 22:57:51 2017 +0200
+
+    adding redecret to root when adding new games, not right move
+
+[33mcommit 56692c5d12074c1944127992b0ae1c4bfdf8e6cd[m
+Author: Tarek <tarepsh@gmail.com>
+Date:   Wed Mar 29 22:46:39 2017 +0200
+
+    adding some styling and do some chang in your line race and sumo
+
+[33mcommit 0543151698602d0532da836e04eb307ed52b9161[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Wed Mar 29 14:05:14 2017 +0200
+
+    there an eroo in showing grops
+
+[33mcommit 58fb6b5b2a5270e755658e4922db166f26279017[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Wed Mar 29 13:36:12 2017 +0200
+
+    adding admin role and do some styleingliung
+
+[33mcommit 2718d17c742d3968443e15bd7f82fa10b1809095[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Wed Mar 29 11:46:21 2017 +0200
+
+    debug log out, adding alter message and doing some styleing
+
+[33mcommit 754019f57257c97518dbccb1dc572e507886bf0d[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Wed Mar 29 11:02:42 2017 +0200
+
+    adding some styling to teams index and make some bug solevin
+
+[33mcommit 51584ea6e87e7c235d4f5a9f54172e7c47572f83[m
+Author: Tarek <tarepsh@gmail.com>
+Date:   Tue Mar 28 23:51:08 2017 +0200
+
+    adding some style
+
+[33mcommit 9f74bdad21cb9b7c8051d75be8ebb66f8629c103[m
+Author: Tarek <tarepsh@gmail.com>
+Date:   Tue Mar 28 23:44:54 2017 +0200
+
+    adding some styly for the app
+
+[33mcommit d28bbcbb17a0a49fcbcd0dda7e8fc33f86f432eb[m
+Author: Tarek <tarepsh@gmail.com>
+Date:   Tue Mar 28 23:17:13 2017 +0200
+
+    adding devie and doint some styleling
+
+[33mcommit 775d9b3f0a0a1d8181e7341ee81cc6a3df6db6d9[m
+Author: Tarek <tarepsh@gmail.com>
+Date:   Mon Mar 27 23:50:42 2017 +0200
+
+    adding best time for teams table and for contorller
+
+[33mcommit 775f38017e60e16df60738171b0d2730b4afcebc[m
+Author: Tarek <tarepsh@gmail.com>
+Date:   Mon Mar 27 23:35:10 2017 +0200
+
+    adding team_group to teams table
+
+[33mcommit 63faa8bc2b9da20f711e32123f3c848994ac4349[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Thu Mar 23 09:03:51 2017 +0000
+
+    maek suer theat everying thins it's up to data on my bitbacukt
+
+[33mcommit fc8eb2d5b6caabfa089c36a9e49eb74dc8b8c85b[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Tue Mar 21 19:56:53 2017 +0000
+
+    adding games plays to show how game it's play
+
+[33mcommit d82bbb639342173b5d642f91d947fc517b4cf121[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Tue Mar 21 19:30:53 2017 +0000
+
+    solving float and time porbmle to game_time in model games promble
+
+[33mcommit 60775263a80a1f7754f9d5f917a9c044b54c459a[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Tue Mar 21 18:39:14 2017 +0000
+
+    adding team group to team as intger, add game time to add game inside team show to add new game withe point and time
+
+[33mcommit 9140f8d3d011a013743869430be0e3f65edacabd[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Tue Mar 21 11:48:52 2017 +0000
+
+    ading score to table indes
+
+[33mcommit 479ff6e0c635a81bed86c9a22603ef4ada5a7f72[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Sun Mar 5 20:42:18 2017 +0000
+
+    testing
+
+[33mcommit 60ff90fbd2544acf03b15610107e4e1d21f21c05[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Sun Mar 5 19:47:17 2017 +0000
+
+    changing to postsql somehting forom sqlite3
+
+[33mcommit d2514d97381c3a34fefbcf96738eb558e1ce457e[m
+Author: tarepsh <tarepsh@gmail.com>
+Date:   Wed Mar 1 08:40:11 2017 +0000
+
+    adding games to team table
+
+[33mcommit cd9526b8bacb955ebcaf6852f743f7ac966a1580[m
+Author: Tarek Sheikh AL-Shbab <tarepsh@gmail.com>
+Date:   Sun Feb 26 19:27:39 2017 +0000
+
+    add team, round, game table for db
+
+[33mcommit ba072b049eaef4e49f6be338a6e7e964a36845fa[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Sun Feb 26 14:53:17 2017 +0200
+
+    adding home contotler withe index peage as home peag
+
+[33mcommit 3d83777b0ef9ecf3e54138d8ccc8508bebb73ec3[m
+Author: tarek sheikh alshbab <tarepsh@gmail.com>
+Date:   Thu Feb 23 12:23:46 2017 +0200
+
+    starting new preject

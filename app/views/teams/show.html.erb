@@ -15,7 +15,7 @@
   <%= @team.team_school %>
 </p>
 
-           <% if current_user.admin %>
+<% if current_user && current_user.admin? %>
          <%= link_to 'Edit', edit_team_path(@team), class:"btn btn-default"%>
         <%= link_to 'Destroy', @team, method: :delete, data: { confirm: 'Are you sure?'}, class:"btn btn-default"%>
             <% end %>
@@ -23,6 +23,8 @@
 </div>
 
 </div>
+<% if current_user && current_user.admin? %>
+
 <h2>Add a game:</h2>
 <%= bootstrap_form_for([@team, @team.games.build], layout: :inline) do |f| %>
   <p>
@@ -36,7 +38,4 @@
     <%= f.submit class: "btn btn-success" %>
   </p>
 <% end %>
- 
-
-<%= link_to 'Edit', edit_team_path(@team) %> |
-<%= link_to 'Back', teams_path %>
+<% end %>

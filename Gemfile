@@ -41,7 +41,7 @@ gem 'jbuilder', '~> 2.5'
 gem "therubyracer"
 gem "twitter-bootstrap-rails"
 gem 'bootstrap_form'
-
+gem 'rails_admin', '~> 1.1.1'
 
 gem 'devise'
 

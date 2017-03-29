@@ -4,7 +4,7 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    @teams = Team.all
+    teams = Team.all
   
   Team.all.each do |id_number| 
   total_point = Game.where(team_id: (id_number))
@@ -25,7 +25,9 @@ class TeamsController < ApplicationController
 
 end
 @teams = Team.order(team_point: :desc, best_time: :asc)
-big_group_number = Team.maximum(:team_group)
+@line_race_teams = Team.where(team_category: "Line Race")
+@open_sumo_teams = Team.where(team_category: "Sumo")
+
 
   end
 
@@ -37,16 +39,21 @@ big_group_number = Team.maximum(:team_group)
 
   # GET /teams/new
   def new
+    before_action :authenticate_admin!
     @team = Team.new
   end
 
   # GET /teams/1/edit
   def edit
+    before_action :authenticate_admin!
+
   end
 
   # POST /teams
   # POST /teams.json
   def create
+    before_action :authenticate_admin!
+
     @team = Team.new(team_params)
 
     respond_to do |format|
@@ -63,6 +70,8 @@ big_group_number = Team.maximum(:team_group)
   # PATCH/PUT /teams/1
   # PATCH/PUT /teams/1.json
   def update
+    before_action :authenticate_admin!
+
     respond_to do |format|
       if @team.update(team_params)
         format.html { redirect_to @team, notice: 'Team was successfully updated.' }
@@ -77,6 +86,8 @@ big_group_number = Team.maximum(:team_group)
   # DELETE /teams/1
   # DELETE /teams/1.json
   def destroy
+    before_action :authenticate_admin!
+
     @team.destroy
     respond_to do |format|
       format.html { redirect_to teams_url, notice: 'Team was successfully destroyed.' }

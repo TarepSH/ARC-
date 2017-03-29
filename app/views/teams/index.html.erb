@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 
 <div class="panel panel-default">
@@ -32,9 +31,11 @@
         <td><%= team.team_point %></td>
         <td><%= team.games_play %>/3</td>
         <td><%= team.best_time %></td>
+           <% if current_user %>
         <td><%= link_to 'Show', team, class:"btn btn-default"%></td>
         <td><%= link_to 'Edit', edit_team_path(team), class:"btn btn-default"%></td>
         <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?'}, class:"btn btn-default"%></td>
+            <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -43,4 +44,6 @@
 <br>
 
 </div>
+       <% if current_user %>
 <%= link_to 'New Team', new_team_path, class:"btn btn-default" %>
+            <% end %>

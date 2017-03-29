@@ -34,7 +34,7 @@
        <% if current_user %>
        <p class="navbar-text"><%= current_user.email %></p>
 
-        <%= menu_item "Log Out", destroy_user_session_path %>
+        <%= menu_item "Log Out", destroy_user_session_path, :method => :delete %>
     <% else %>
             <%= menu_item "Sign Up", new_user_registration_path %>
              <%= menu_item "Log in", new_user_session_path %>
@@ -45,6 +45,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<%= render partial: "shared/flash_messages", flash: flash %> 
 
 
     <%= yield %>

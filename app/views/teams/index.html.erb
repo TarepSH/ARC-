@@ -1,11 +1,9 @@
 
-
+<div class="row col-md-6">
 <div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading">ARC Syira - Teams</div>
-
   <!-- Table -->
-  
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
@@ -33,17 +31,19 @@
         <td><%= team.best_time %></td>
            <% if current_user %>
         <td><%= link_to 'Show', team, class:"btn btn-default"%></td>
-        <td><%= link_to 'Edit', edit_team_path(team), class:"btn btn-default"%></td>
-        <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?'}, class:"btn btn-default"%></td>
             <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
 </div>
+</div>
+
+<div class="row col-sm-12">
+
        <% if current_user %>
 <%= link_to 'New Team', new_team_path, class:"btn btn-default" %>
             <% end %>
+
+</div>

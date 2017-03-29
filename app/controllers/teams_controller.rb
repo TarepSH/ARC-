@@ -20,7 +20,9 @@ class TeamsController < ApplicationController
   best_time_from_games = total_point.minimum(:game_time)
   add_best_time = Team.where(id: (id_number))
   add_best_time.update(best_time: best_time_from_games)
+
 end
+@teams = Team.order(team_point: :desc, best_time: :asc)
   end
 
   # GET /teams/1

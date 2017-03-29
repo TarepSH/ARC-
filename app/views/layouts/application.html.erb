@@ -21,14 +21,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">ARC 3 - APP </a>
+      <%=link_to "ARC 3 - APP", root_path, class:"navbar-brand"%>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href=<%root_path%>>Home</a></li>
-        <li><a href="#">New Game</a></li>
+        <li><%=link_to "Home", root_path%></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">

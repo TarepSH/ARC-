@@ -21,8 +21,12 @@ class TeamsController < ApplicationController
   add_best_time = Team.where(id: (id_number))
   add_best_time.update(best_time: best_time_from_games)
 
+
+
 end
 @teams = Team.order(team_point: :desc, best_time: :asc)
+big_group_number = Team.maximum(:team_group)
+
   end
 
   # GET /teams/1

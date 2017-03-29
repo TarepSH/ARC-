@@ -19,6 +19,8 @@
     </tr>
   </thead>
   <tbody>
+
+<% big_group_number do |group, index| %>
     <% @teams.each_with_index do |team, index| %>
       <tr>
         <td><%= index+1 %></td>
@@ -34,6 +36,8 @@
             <% end %>
       </tr>
     <% end %>
+        <% end %>
+
   </tbody>
 </table>
 <br>

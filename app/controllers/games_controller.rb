@@ -27,14 +27,14 @@ class GamesController < ApplicationController
   def create
    @team = Team.find(params[:team_id])
     @game = @team.games.create(game_params)
-    @game.team_id = @game.id
-     
+         @game = Game.new
+
     respond_to do |format|
       if @game.save
         format.html { redirect_to root_path, notice: 'Game was successfully created.' }
         format.json { render :show, status: :created, location: @game }
       else
-        format.html { redirect_to root_path, notice: 'Game was successfully created. ' } #Note else one
+        format.html { redirect_to root_path, notice: 'Game was successfully created. not good ' } #Note else one
         format.json { render json: @game.errors, status: :unprocessable_entity }
       end
     end

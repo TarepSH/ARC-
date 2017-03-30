@@ -4,7 +4,7 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    teams = Team.all
+    @teams = Team.all
   
   Team.all.each do |id_number| 
   total_point = Game.where(team_id: (id_number))

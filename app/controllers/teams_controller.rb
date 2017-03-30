@@ -39,20 +39,17 @@ end
 
   # GET /teams/new
   def new
-    before_action :authenticate_admin!
     @team = Team.new
   end
 
   # GET /teams/1/edit
   def edit
-    before_action :authenticate_admin!
 
   end
 
   # POST /teams
   # POST /teams.json
   def create
-    before_action :authenticate_admin!
 
     @team = Team.new(team_params)
 
@@ -70,7 +67,6 @@ end
   # PATCH/PUT /teams/1
   # PATCH/PUT /teams/1.json
   def update
-    before_action :authenticate_admin!
 
     respond_to do |format|
       if @team.update(team_params)
@@ -86,7 +82,6 @@ end
   # DELETE /teams/1
   # DELETE /teams/1.json
   def destroy
-    before_action :authenticate_admin!
 
     @team.destroy
     respond_to do |format|

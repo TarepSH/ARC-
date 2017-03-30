@@ -1,6 +1,10 @@
+<% if current_user && current_user.admin? %>
 <h1>Editing Team</h1>
 
 <%= render 'form', team: @team %>
 
 <%= link_to 'Show', @team %> |
 <%= link_to 'Back', teams_path %>
+	<% else %>
+	<p>you can't, ask Tarek :P</p>
+<% end %>

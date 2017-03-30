@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ARC 3 - SCS-App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARC 3 - SCS - App</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -46,8 +47,9 @@
 
 <%= render partial: "shared/flash_messages", flash: flash %> 
 
-
+<div class="container-fluid">
     <%= yield %>
+    </div>
     <div class="navbar container-fluid navbar-default navbar-fixed-bottom"><p class="navbar-text">ARC 3 App - Tarek </p></div>
 
   </body>

@@ -44,6 +44,8 @@ gem 'bootstrap_form'
 gem 'rails_admin', '~> 1.1.1'
 
 gem 'devise'
+gem "rails_admin_import", "~> 2.0"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -43,7 +43,6 @@ class GamesController < ApplicationController
   # PATCH/PUT /games/1
   # PATCH/PUT /games/1.json
   def update
-        before_action :authenticate_admin!
 
     respond_to do |format|
       if @game.update(game_params)
@@ -59,7 +58,6 @@ class GamesController < ApplicationController
   # DELETE /games/1
   # DELETE /games/1.json
   def destroy
-        before_action :authenticate_admin!
 
     @game.destroy
     respond_to do |format|
@@ -71,7 +69,6 @@ class GamesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_game
-      @game = Game.find(params[:id])
             @team = Team.find(params[:team_id])
     end
 

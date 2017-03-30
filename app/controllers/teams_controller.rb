@@ -24,7 +24,7 @@ class TeamsController < ApplicationController
 
 
 end
-#@teams = Team.order(team_point: :desc, best_time: :asc)
+@teams = Team.order(team_group: :desc, team_point: :desc, best_time: :asc)
 @line_race_teams = Team.where(team_category: "Line Race").order(team_group: :desc, team_point: :desc, best_time: :asc)
 @open_sumo_teams = Team.where(team_category: "Sumo").order(team_group: :desc, team_point: :desc, best_time: :asc)
 

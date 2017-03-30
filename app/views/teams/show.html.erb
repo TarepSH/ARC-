@@ -28,11 +28,11 @@
 <h2>Add a game:</h2>
 <%= bootstrap_form_for([@team, @team.games.build], layout: :inline) do |f| %>
   <p>
-    <%= f.number_field :game_point, :required => true, help: "0=for lose, 1=for draw, 2=for win"%>
+    <%= f.number_field :game_point, :required => true, help: "0=for lose (sumo) or get out track (line race), 1=for draw (sumo) or make the map courect, 2=for win (sumo just)"%>
   </p>
   
    <p>
-    <%= f.number_field :game_time, :step => 0.01, :required => true, help: "ex: 1.15 for 1 minute and 15 seconds or 0.20 =for 20 seconds"%>
+    <%= f.number_field :game_time, :step => 0.01, :required => true, help: "ex: 1.15 for 1 minute and 15 seconds or 0.20 =for 20 seconds - Do not add time to sumo games."%>
   </p>
   <p>
     <%= f.submit class: "btn btn-success" %>

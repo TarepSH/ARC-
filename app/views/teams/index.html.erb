@@ -12,6 +12,7 @@
     <tr>
       <th>#</th>
       <th>Team name</th>
+      <th>Add game</th>
       <th>Team school</th>
       <th>Team category</th>
       <th>Team Group</th>
@@ -26,6 +27,7 @@
       <tr>
         <td><%= index+1 %></td>
         <td><%= team.team_name %></td>
+        <td><%= link_to 'Add game', team, class:"btn btn-default"%></td>
         <td><%= team.team_school %></td>
         <td><%= team.team_category %></td>
         <td><%= team.team_group %></td>
@@ -33,7 +35,6 @@
         <td><%= team.games_play %>/3</td>
         <td><%= team.best_time %></td>
            <% if current_user %>
-        <td><%= link_to 'Show', team, class:"btn btn-default"%></td>
             <% end %>
       </tr>
     <% end %>

@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
+ARC (ِAnnual Robotic Challenge) Scoring System, you can add team, add round for each team and add games with points and time for every team and you can show all of sociling in one peag for visitors. this system support special account for Admin, jaudes and normal vistoers/user.
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ License
+MIT
